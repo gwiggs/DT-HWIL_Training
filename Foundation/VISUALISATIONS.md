@@ -4,9 +4,9 @@
 1. Eye Diagram - I Channel
 - Why: BPSK only uses I channel, so this is critical
 - What to look for:
- - Wide eye opening → good timing
- - Two distinct levels (+1, -1)
- - Crossing point at 50% amplitude
+  - Wide eye opening → good timing
+  - Two distinct levels (+1, -1)
+  - Crossing point at 50% amplitude
 - When to use: Diagnosing timing issues, ISI, noise
 2. Constellation Diagram
 - Why: Should show two clear points on real axis
