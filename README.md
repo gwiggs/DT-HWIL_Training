@@ -1,7 +1,7 @@
 # Digital Twin Development Training Program
 ## DSP & EW Hardware-in-the-Loop Integration
 
-**Author**: Greg (Flight Lieutenant, RAAF - Cyber Warfare Operations Officer)  
+**Author**: Greg
 **Duration**: 16 weeks  
 **Focus Areas**: Digital Twins, DSP/EW Systems, C Programming, Python Integration, HWIL
 
