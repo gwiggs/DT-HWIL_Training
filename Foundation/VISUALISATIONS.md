@@ -11,16 +11,16 @@
 2. Constellation Diagram
 - Why: Should show two clear points on real axis
 - What to look for:
- - Points at (+1, 0) and (-1, 0)
- - Tight clustering → low noise
- - Spread along I axis → good
- - Spread in Q direction → carrier phase error
+  - Points at (+1, 0) and (-1, 0)
+  - Tight clustering → low noise
+  - Spread along I axis → good
+  - Spread in Q direction → carrier phase error
 - When to use: Checking SNR, phase lock quality
 3. Phase Trajectory Over Time
 - Why: Shows phase transitions (0° ↔ 180°)
 - What to look for:
- - Square wave between 0° and 180°
- - Smooth transitions if pulse-shaped
+  - Square wave between 0° and 180°
+  - Smooth transitions if pulse-shaped
 - When to use: Verifying modulation, checking phase continuity
 ### Pseudocode for BPSK-specific visualisations:
 ```
@@ -74,24 +74,24 @@ end function
 1. Constellation Diagram
 - Why: QPSK's four states are best seen here
 - What to look for:
- - Four tight clusters at 45°, 135°, 225°, 315°
- - Equal magnitude for all points
- - Rotation → carrier frequency offset
- - Elongation along axis → phase noise
+  - Four tight clusters at 45°, 135°, 225°, 315°
+  - Equal magnitude for all points
+  - Rotation → carrier frequency offset
+  - Elongation along axis → phase noise
 - When to use: Primary diagnostic tool for QPSK
 2. Eye Diagram - Both I and Q
 - Why: Both channels carry information equally
 - What to look for:
- - Three distinct levels in each eye (transitions between ±1)
- - Equal eye opening in I and Q
- - Synchronized zero crossings
+  - Three distinct levels in each eye (transitions between ±1)
+  - Equal eye opening in I and Q
+  - Synchronized zero crossings
 - When to use: Timing recovery verification
 3. Trajectory Diagram (I/Q over time)
 - Why: Shows constellation transitions
 - What to look for:
- - Paths between constellation points
- - Smooth transitions if pulse-shaped
- - No paths through origin (good phase shaping)
+  - Paths between constellation points
+  - Smooth transitions if pulse-shaped
+  - No paths through origin (good phase shaping)
 - When to use: Checking pulse shaping effectiveness
 ### Pseudocode for QPSK visualizations:
 ```
@@ -187,24 +187,24 @@ end function
 1. Constellation Diagram with Decision Boundaries
 - Why: Many constellation points need clear visualization
 - What to look for:
- - 16 distinct clusters in grid pattern
- - Equal spacing between points
- - Clusters don't overlap
- - Outer points have higher error rates
+  - 16 distinct clusters in grid pattern
+  - Equal spacing between points
+  - Clusters don't overlap
+  - Outer points have higher error rates
 - When to use: Primary diagnostic, especially for EVM
 2. EVM vs Symbol Index
 - Why: Shows how error varies over time
 - What to look for:
- - Consistent low EVM → good link
- - Periodic variations → synchronization issues
- - Gradual drift → frequency offset
+  - Consistent low EVM → good link
+  - Periodic variations → synchronization issues
+  - Gradual drift → frequency offset
 - When to use: Performance monitoring, link quality
 3. Error Vector Magnitude Histogram
 - Why: Statistical distribution of errors
 - What to look for:
- - Peak near zero
- - Narrow distribution → low noise
- - Long tail → occasional deep fades
+  - Peak near zero
+  - Narrow distribution → low noise
+  - Long tail → occasional deep fades
 - When to use: Link budget analysis
 ### Pseudocode for QAM visualizations:
 ```
@@ -305,23 +305,23 @@ end function
 1. Spectrogram (Time-Frequency)
 - Why: Shows frequency changes over time directly
 - What to look for:
- - Discrete frequency bands
- - Sharp transitions between frequencies
- - No frequency drift within symbols
+  - Discrete frequency bands
+  - Sharp transitions between frequencies
+  - No frequency drift within symbols
 - When to use: Primary diagnostic for FSK
 2. Instantaneous Frequency vs Time
 - Why: Direct visualization of frequency modulation
 - What to look for:
- - Square wave pattern
- - Stable frequency levels
- - Clean transitions
+  - Square wave pattern
+  - Stable frequency levels
+  - Clean transitions
 - When to use: Verifying frequency accuracy
 3. FFT (averaged over symbol period)
 - Why: Shows spectral separation of tones
 - What to look for:
- - Distinct peaks at each FSK frequency
- - No spectral overlap
- - Adequate frequency separation
+  - Distinct peaks at each FSK frequency
+  - No spectral overlap
+  - Adequate frequency separation
 - When to use: Checking frequency spacing
 ### Pseudocode for FSK visualizations:
 ```
