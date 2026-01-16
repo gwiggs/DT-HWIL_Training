@@ -77,18 +77,22 @@ This training program develops expertise in digital twin development for DSP and
 ```
 
 **Exercise 1.3: Sampling Theory** (2 hours)
+```python
 - Demonstrate aliasing with various sampling rates
 - Implement and visualize the sampling theorem
 - Create anti-aliasing filter example
+```
 
 #### Guided Project 1: Signal Analysis Toolkit (5 hours)
 
+```python
 Build a Python module that provides:
 - Signal generation functions (sine, square, triangle, noise)
 - Time-domain analysis (RMS, peak detection, zero crossings)
 - Frequency-domain analysis (FFT, PSD, spectrogram)
 - Basic filtering (moving average, simple IIR)
 - Visualization utilities
+```
 
 **Deliverables**:
 - `signal_toolkit.py` module
