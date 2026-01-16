@@ -49,7 +49,7 @@ def eye_diagram(signal, samples_per_symbol, num_symbols=5):
     plt.grid()
     plt.show()
     
-def plat_spectrogram(signal, sampling_rate):
+def plot_spectrogram(signal, sampling_rate):
     plt.figure(figsize=(10, 6))
     plt.specgram(signal, NFFT=1024, Fs=sampling_rate, noverlap=512, cmap='plasma')
     plt.title('Spectrogram')
